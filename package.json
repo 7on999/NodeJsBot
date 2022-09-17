@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "node-telegram-bot-api": "^0.59.0",
+    "nodemon": "^2.0.20"
+  },
+  "name": "nodejsbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7on999/NodeJsBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/7on999/NodeJsBot/issues"
+  },
+  "homepage": "https://github.com/7on999/NodeJsBot#readme",
+  "description": ""
+}
