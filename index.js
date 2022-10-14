@@ -20,6 +20,31 @@ const startGame = async(chatId)=>{
     await bot.sendMessage(chatId, "Отгадывай", gameOptions)
 }
 
+
+// const pgPool = new Pool(pgConfig);
+// const pgPoolWrapper = {
+//     async connect() {
+//         for (let nRetry = 1; ; nRetry++) {
+//             try {
+//                 const client = await pgPool.connect();
+//                 if (nRetry > 1) {
+//                     console.info('Now successfully connected to Postgres');
+//                 }
+//                 return client;
+//             } catch (e) {
+//                 if (e.toString().includes('ECONNREFUSED') && nRetry < 5) {
+//                     console.info('ECONNREFUSED connecting to Postgres, ' +
+//                         'maybe container is not ready yet, will retry ' + nRetry);
+//                     // Wait 1 second
+//                     await new Promise(resolve => setTimeout(resolve, 1000));
+//                 } else {
+//                     throw e;
+//                 }
+//             }
+//         }
+//     }
+// };
+
 bot.on("message", async(msg)=>{
     console.log('inner handle message')
 
