@@ -24,7 +24,7 @@ module.exports = {
             ]
         })
     },
-    
+
      restartGameOptions : {
         reply_markup: JSON.stringify({
             inline_keyboard:[
