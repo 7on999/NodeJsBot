@@ -58,7 +58,7 @@ async function getInfoWeather({chatId, bot}) {
         console.log('в начале')
         const browser = await puppeteer.launch({ 
             args: ['--no-sandbox'], 
-            headless:false
+            headless:true
         })
         const page = await browser.newPage()
         await page.goto('https://www.eldoradoweather.com/canada/CanadaForecasts/canada/canada.php')
