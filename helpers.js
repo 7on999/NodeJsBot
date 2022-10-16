@@ -61,7 +61,6 @@ async function getInfoWeather({chatId, bot}) {
                 "--no-sandbox",
                 "--disable-setuid-sandbox"
         ], 
-            headless:true
         })
         console.log("browser:", browser)
         const page = await browser.newPage()
