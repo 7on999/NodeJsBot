@@ -63,6 +63,7 @@ async function getInfoWeather({chatId, bot}) {
         ], 
             headless:true
         })
+        console.log("browser:", browser)
         const page = await browser.newPage()
         await page.goto('https://www.eldoradoweather.com/canada/CanadaForecasts/canada/canada.php')
         
