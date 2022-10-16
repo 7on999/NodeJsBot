@@ -1,5 +1,4 @@
 const puppeteer = require('puppeteer')
-
 const botResponses = require('./bot-responses')
 const {gameOptions, restartGameOptions} = require('./options')
 
@@ -57,7 +56,10 @@ async function selectCityHandle ({bot, msg}){
 
 async function getInfoWeather({chatId, bot}) {
         console.log('в начале')
-        const browser = await puppeteer.launch({headless:false})
+        const browser = puppeteer.launch({ 
+            args: ['--no-sandbox'], 
+            headless:true
+        })
         const page = await browser.newPage()
         await page.goto('https://www.eldoradoweather.com/canada/CanadaForecasts/canada/canada.php')
         
